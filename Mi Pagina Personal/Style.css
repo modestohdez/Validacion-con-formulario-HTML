@@ -1,0 +1,160 @@
+body{
+    font-family: 'Arial', sans-serif; 
+    margin: 10; 
+    background-color:rgba(255, 166, 0, 0.904); 
+    color:black; 
+}
+
+.imagen {
+    text-align: center;
+}
+
+.imagen img{
+    max-width: 21%;
+    height: auto;
+    border-radius: 115px;
+    border: 6px solid #33020ffd;
+    height: 225px;
+    width: 225px;
+}
+
+
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.a{
+    background-color: #640404;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.m{
+    background-color: #640404;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.mc{
+    background-color: #640404;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+p {
+    margin-top: 20px;    
+    margin-bottom: 20px; 
+    padding: 10px;       
+    line-height: 1.6;    
+}
+
+ol, ul {
+    margin: 20px; 
+    padding: 10px; 
+}
+
+li {
+    margin: 5px 0;
+    padding: 5px; 
+}
+
+h3 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+.schedule-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 100px;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.schedule-table thead {
+    background-color: #0066cc;
+    color: #7c5281;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 10px;
+    border: 1px solid #794f4f;
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+    background-color: #0e0d0d09;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #663535;
+}
+
+
+@media (max-width: 600px) {
+    .schedule-container {
+        padding: 10px;
+    }
+
+    .schedule-table thead {
+        display: none;
+    }
+
+    .schedule-table, .schedule-table tbody, .schedule-table tr, .schedule-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .schedule-table tr {
+        margin-bottom: 15px;
+    }
+
+    .schedule-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .schedule-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+.receso{
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.calculadora{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000;
+}
